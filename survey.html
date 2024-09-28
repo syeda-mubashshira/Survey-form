@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Survey-Form</title>
+  <style>
+    body{
+   background:linear-gradient(to bottom,#964b00,#4c3800);
+    }
+    *{
+  padding:1px;
+  margin:15px;
+  font-family:Verdana;
+    }
+#header,#description{
+text-align:center;
+}
+span{
+  font-family:Papyrus;
+  color:#f7dc6f;
+}
+#header{
+  padding:2.5px, 5px;
+  color:white;
+  font-size:45px;
+  font-family:Papyrus;
+  font-weight:45px;
+  font-style:oblique;
+}
+#description{
+  font-family:"Brush Script MT";
+  font-size:35px;
+  color:#f5f5dc;
+  margin-bottom:20px;
+}
+#name, #email,#number,#dropdown,#submit{
+background-color:#eeeded;
+padding:1px;
+border:1px solid black;
+
+}
+#name::placeholder{
+  color:#786c3b;
+  font-style:italic;
+}
+#email::placeholder{
+  color:#786c3b;
+  font-style:italic;
+}#number::placeholder{
+  color:#786c3b;
+  font-style:italic;
+}
+textarea{
+  background-color:#eeeded;
+  color:#786c3b;
+  font-style:italic;
+}
+#submit{
+background-color:#eeeded;
+  color:#000000;
+  font-style:italic;
+}
+select{
+  color:#604a3b;
+  font-style:italic;
+}
+form{
+background-color:#fff2cc;
+box-shadow:0 0 10px rgba(0,0,0,0,1);
+border-radius:20px;
+border:none;
+width:700px;
+margin:auto;
+font-style:italic;
+color:#964b00;
+}
+ </style>
+</head>
+<body>
+  <div class="main">
+    <h1 id="header">READER'S <span>CORNER</span></h1>
+    <p id="description">Unshelf Your Thoughts: Share Your Book Experience</p>
+    <div class="details">
+<form id ="survey-form">
+        <br><label id="name-label">Name<br>
+          <input id="name" type="text" required placeholder="name"</label><br>
+        <label id="email-label">E-mail<br>
+          <input id="email" type="email" required placeholder="example@gmail.com"</label><br>
+        <label id="number-label">Age<br>
+          <input id="number" type="number" required placeholder="25" min="5" max="99"></label>
+   
+        <div>
+        <legend>How often do you read?</legend>
+        <select id="dropdown" class="form">
+          <option value="everyday">daily</option>
+          <option value="weekly">weekly</option>
+          <option value="monthly">monthly</option>
+          <option value="rarely">rarely</option>
+          <option value="never">never read any book</option><br>
+        </select>
+    </div>
+    <div id="rad">
+          <legend id="choose">Pick up your favourite format</legend>
+             <input type="radio" class="rb"  value="paperbacks"name="format">Paperbacks<br>
+             <input type="radio" class="rb"  value="hardcovers"name="format">Hardcovers<br>
+             <input type="radio" class="rb" value="e-books" name="format">E-books<br>
+             <input type="radio" class="rb"  value="audio-books" name="format">Audio-books<br>
+    </div>
+    <div class="prefer">
+          <legend id="choose">What's your story preference? </legend>
+             <input type="radio" value="non-fiction" class="radio-in" name="fic">Real world (non-fic)<br>
+             <input type="radio" value="fiction" class="radio-in" name="fic">Fictional world (fic)<br>
+             <input type="radio" value="graphic-novel" class="radio-in" name="fic">Graphical world<br>
+    </div>
+    
+     <div id="chbox">
+          <legend id="cb">What's your genre vibes?</legend>
+             <input type="checkbox" name="genre" value="romantic" name="romantic">Romantic<br>
+             <input type="checkbox" name="genre" value="thriller" name="thriller">Thriller/Mystery<br>
+             <input type="checkbox" name="genre" value="fantasy" name="fantasy">Fantasy<br>
+             <input type="checkbox" name="genre" value="history" name="history">Historical Fiction<br>
+             <input type="checkbox" name="genre" value="horror" name="horror">Horror<br>
+             <input type="checkbox" name="genre" value="sci-fi" name="sci-fi">Sci-fi<br>
+             <input type="checkbox" name="genre" value="humor" name="humor">Humor/Comedy<br>
+
+     </div>
+     <div id="comment">
+             <legend>Anything you would like to share?</legend>
+             <textarea class="form">Enter your comment here....</textarea>
+     </div>
+     <div class="sub">
+          <input id="submit" type="submit">
+     </div>              
+</form>
+</div>
+</body>
+  </html>
+
